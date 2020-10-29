@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<script src="js/main.js"></script>
+		<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=API KEY&callback=initMap&libraries=&v=weekly" type="text/javascript"></script>
+		<link rel="manifest" href="/manifest.json">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#edf2f8"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="cROvid-GO">
+		<meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+		<meta name="msapplication-TileColor" content="#edf2f8">
+		<title>cROvid-GO</title>
+	</head>
+	<body>
+		<div id="box">
+			<header id="header">
+				<h1 id="dashboard_text">Dashboard</h1>
+			</header>
+			<input type="text" class="fancy_button" id="your_location_home_screen" name="your_location_home_screen" placeholder="Search">
+			<div id="grid_container" class="grid-container">
+				<div id="heatmap_btn" class="grid-item">Heatmap
+					<img class="grid-image" src="images/heatmap.svg">
+				</div>
+				<div id="forecast_btn" class="grid-item">Forecast
+					<img class="grid-image" src="images/forecast.svg">
+				</div>
+					
+				<div class="grid-item">Fake News
+					<img class="grid-image" src="images/fake_news.svg">
+				</div>  
+					
+				<div class="grid-item">Community
+					<img class="grid-image" src="images/community.svg">
+				</div>
+			</div>
+			<button id="settings_btn" class="fancy_button">Settings</button>
+		</div>
+		<div id="heatmap">
+			<div class="topbar">
+				<button class="back_btn" id="heatmap_back_button"><</button>
+
+			</div>
+			<div id="map"></div>
+		</div>
+		<div id="forecast">
+			<div class="topbar">
+				<button class="back_btn" id="forecast_back_button"><</button>
+			</div>
+			<input type="text" class="fancy_button" id="country_code_input" placeholder="Input your county code">
+			<button id="country_code_btn" class="fancy_button">Check</button>
+			<div id="forecast_output"></div>
+		</div>
+	</body>
+</html>
